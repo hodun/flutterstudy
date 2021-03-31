@@ -28,11 +28,9 @@
 
   <title>flutterstudy</title>
   <link rel="manifest" href="manifest.json">
+    
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
@@ -40,6 +38,26 @@
       });
     }
   </script>
+
+  <!--원래 8.3.1이나 작동안하여 8.0.1로 수정-->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>  
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCHs4zuhgdXcBqp6Se-neni-vN7q4R0k2o",
+      authDomain: "flutterstudy-363e4.firebaseapp.com",
+      projectId: "flutterstudy-363e4",
+      storageBucket: "flutterstudy-363e4.appspot.com",
+      messagingSenderId: "148156408594",
+      appId: "1:148156408594:web:af7aba7e48d864511b89cb"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>  
+
   <script src="main.dart.js" type="application/javascript"></script>
+ 
 </body>
 </html>

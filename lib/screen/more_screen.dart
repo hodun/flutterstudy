@@ -19,7 +19,7 @@ class MoreScreen extends StatelessWidget {
             Container(
               padding: EdgeInsets.only(top: 15),
               child: Text(
-                'TaeBbong',
+                'Hodols',
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
@@ -40,7 +40,7 @@ class MoreScreen extends StatelessWidget {
                     await launch(link.url);
                   }
                 },
-                text: "https://github.com/TaeBbong",
+                text: "https://github.com/hodun",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 linkStyle: TextStyle(color: Colors.white),
               ),
