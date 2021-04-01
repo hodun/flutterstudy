@@ -1,8 +1,9 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterstudy/screen/home_screen.dart';
+import 'package:flutterstudy/screen/like_screen.dart';
 import 'package:flutterstudy/screen/more_screen.dart';
+import 'package:flutterstudy/screen/search_screen.dart';
 import 'package:flutterstudy/widget/bottom_bar.dart';
 
 void main() async {
@@ -61,16 +62,8 @@ class _MyAppState extends State<MyApp> {
             physics: NeverScrollableScrollPhysics(),
             children: [
               HomeScreeen(),
-              Container(
-                child: Center(
-                  child: Text('Search'),
-                ),
-              ),
-              Container(
-                child: Center(
-                  child: Text('Save'),
-                ),
-              ),
+              SearchScreen(),
+              LikeScreen(),
               MoreScreen(),
             ],
           ),
